@@ -1,343 +1,887 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		D4E837201724DEFE001152D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E8371F1724DEFE001152D1 /* UIKit.framework */; };
-		D4E837221724DEFE001152D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E837211724DEFE001152D1 /* Foundation.framework */; };
-		D4E837241724DEFE001152D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E837231724DEFE001152D1 /* CoreGraphics.framework */; };
-		D4E837261724DEFE001152D1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E837251724DEFE001152D1 /* CoreData.framework */; };
-		D4E837291724DEFE001152D1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D4E837281724DEFE001152D1 /* Podfile */; };
-		D4E8372F1724DEFE001152D1 /* AutoSyncWithHerokuAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E8372E1724DEFE001152D1 /* AutoSyncWithHerokuAPIClient.m */; };
-		D4E837331724DEFE001152D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E837311724DEFE001152D1 /* InfoPlist.strings */; };
-		D4E837351724DEFE001152D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E837341724DEFE001152D1 /* main.m */; };
-		D4E837381724DEFE001152D1 /* aswhAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E837371724DEFE001152D1 /* aswhAppDelegate.m */; };
-		D4E8373A1724DEFE001152D1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E837391724DEFE001152D1 /* Default.png */; };
-		D4E8373C1724DEFE001152D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E8373B1724DEFE001152D1 /* Default@2x.png */; };
-		D4E8373E1724DEFE001152D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E8373D1724DEFE001152D1 /* Default-568h@2x.png */; };
-		D4E837421724DEFE001152D1 /* AutoSyncWithHeroku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4E837401724DEFE001152D1 /* AutoSyncWithHeroku.xcdatamodeld */; };
-		D4E837451724DEFE001152D1 /* AutoSyncWithHerokuIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E837441724DEFE001152D1 /* AutoSyncWithHerokuIncrementalStore.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		D4E8371C1724DEFE001152D1 /* AutoSyncWithHeroku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoSyncWithHeroku.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4E8371F1724DEFE001152D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D4E837211724DEFE001152D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D4E837231724DEFE001152D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D4E837251724DEFE001152D1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		D4E837281724DEFE001152D1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
-		D4E8372B1724DEFE001152D1 /* AutoSyncWithHeroku-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoSyncWithHeroku-Prefix.pch"; sourceTree = "<group>"; };
-		D4E8372D1724DEFE001152D1 /* AutoSyncWithHerokuAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AutoSyncWithHerokuAPIClient.h; path = Classes/AutoSyncWithHerokuAPIClient.h; sourceTree = "<group>"; };
-		D4E8372E1724DEFE001152D1 /* AutoSyncWithHerokuAPIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AutoSyncWithHerokuAPIClient.m; path = Classes/AutoSyncWithHerokuAPIClient.m; sourceTree = "<group>"; };
-		D4E837301724DEFE001152D1 /* AutoSyncWithHeroku-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoSyncWithHeroku-Info.plist"; sourceTree = "<group>"; };
-		D4E837321724DEFE001152D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D4E837341724DEFE001152D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D4E837361724DEFE001152D1 /* aswhAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aswhAppDelegate.h; sourceTree = "<group>"; };
-		D4E837371724DEFE001152D1 /* aswhAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aswhAppDelegate.m; sourceTree = "<group>"; };
-		D4E837391724DEFE001152D1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D4E8373B1724DEFE001152D1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		D4E8373D1724DEFE001152D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D4E837411724DEFE001152D1 /* AutoSyncWithHeroku.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutoSyncWithHeroku.xcdatamodel; sourceTree = "<group>"; };
-		D4E837431724DEFE001152D1 /* AutoSyncWithHerokuIncrementalStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AutoSyncWithHerokuIncrementalStore.h; path = Classes/AutoSyncWithHerokuIncrementalStore.h; sourceTree = "<group>"; };
-		D4E837441724DEFE001152D1 /* AutoSyncWithHerokuIncrementalStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AutoSyncWithHerokuIncrementalStore.m; path = Classes/AutoSyncWithHerokuIncrementalStore.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		D4E837191724DEFE001152D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4E837201724DEFE001152D1 /* UIKit.framework in Frameworks */,
-				D4E837221724DEFE001152D1 /* Foundation.framework in Frameworks */,
-				D4E837241724DEFE001152D1 /* CoreGraphics.framework in Frameworks */,
-				D4E837261724DEFE001152D1 /* CoreData.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		D4E837131724DEFE001152D1 = {
-			isa = PBXGroup;
-			children = (
-				D4E837271724DEFE001152D1 /* AutoSyncWithHeroku */,
-				D4E8371E1724DEFE001152D1 /* Frameworks */,
-				D4E8371D1724DEFE001152D1 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		D4E8371D1724DEFE001152D1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D4E8371C1724DEFE001152D1 /* AutoSyncWithHeroku.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D4E8371E1724DEFE001152D1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D4E8371F1724DEFE001152D1 /* UIKit.framework */,
-				D4E837211724DEFE001152D1 /* Foundation.framework */,
-				D4E837231724DEFE001152D1 /* CoreGraphics.framework */,
-				D4E837251724DEFE001152D1 /* CoreData.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D4E837271724DEFE001152D1 /* AutoSyncWithHeroku */ = {
-			isa = PBXGroup;
-			children = (
-				D4E837281724DEFE001152D1 /* Podfile */,
-				D4E837361724DEFE001152D1 /* aswhAppDelegate.h */,
-				D4E837371724DEFE001152D1 /* aswhAppDelegate.m */,
-				D4E8372C1724DEFE001152D1 /* Networking */,
-				D4E8373F1724DEFE001152D1 /* Models */,
-				D4E8372A1724DEFE001152D1 /* Supporting Files */,
-			);
-			path = AutoSyncWithHeroku;
-			sourceTree = "<group>";
-		};
-		D4E8372A1724DEFE001152D1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D4E8372B1724DEFE001152D1 /* AutoSyncWithHeroku-Prefix.pch */,
-				D4E837301724DEFE001152D1 /* AutoSyncWithHeroku-Info.plist */,
-				D4E837311724DEFE001152D1 /* InfoPlist.strings */,
-				D4E837341724DEFE001152D1 /* main.m */,
-				D4E837391724DEFE001152D1 /* Default.png */,
-				D4E8373B1724DEFE001152D1 /* Default@2x.png */,
-				D4E8373D1724DEFE001152D1 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D4E8372C1724DEFE001152D1 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				D4E8372D1724DEFE001152D1 /* AutoSyncWithHerokuAPIClient.h */,
-				D4E8372E1724DEFE001152D1 /* AutoSyncWithHerokuAPIClient.m */,
-				D4E837431724DEFE001152D1 /* AutoSyncWithHerokuIncrementalStore.h */,
-				D4E837441724DEFE001152D1 /* AutoSyncWithHerokuIncrementalStore.m */,
-			);
-			name = Networking;
-			sourceTree = "<group>";
-		};
-		D4E8373F1724DEFE001152D1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D4E837401724DEFE001152D1 /* AutoSyncWithHeroku.xcdatamodeld */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		D4E8371B1724DEFE001152D1 /* AutoSyncWithHeroku */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4E837481724DEFE001152D1 /* Build configuration list for PBXNativeTarget "AutoSyncWithHeroku" */;
-			buildPhases = (
-				D4E837181724DEFE001152D1 /* Sources */,
-				D4E837191724DEFE001152D1 /* Frameworks */,
-				D4E8371A1724DEFE001152D1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AutoSyncWithHeroku;
-			productName = AutoSyncWithHeroku;
-			productReference = D4E8371C1724DEFE001152D1 /* AutoSyncWithHeroku.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D4E837141724DEFE001152D1 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = aswh;
-				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Andrew Roin";
-			};
-			buildConfigurationList = D4E837171724DEFE001152D1 /* Build configuration list for PBXProject "AutoSyncWithHeroku" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = D4E837131724DEFE001152D1;
-			productRefGroup = D4E8371D1724DEFE001152D1 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				D4E8371B1724DEFE001152D1 /* AutoSyncWithHeroku */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		D4E8371A1724DEFE001152D1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4E837291724DEFE001152D1 /* Podfile in Resources */,
-				D4E837331724DEFE001152D1 /* InfoPlist.strings in Resources */,
-				D4E8373A1724DEFE001152D1 /* Default.png in Resources */,
-				D4E8373C1724DEFE001152D1 /* Default@2x.png in Resources */,
-				D4E8373E1724DEFE001152D1 /* Default-568h@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		D4E837181724DEFE001152D1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4E8372F1724DEFE001152D1 /* AutoSyncWithHerokuAPIClient.m in Sources */,
-				D4E837351724DEFE001152D1 /* main.m in Sources */,
-				D4E837381724DEFE001152D1 /* aswhAppDelegate.m in Sources */,
-				D4E837421724DEFE001152D1 /* AutoSyncWithHeroku.xcdatamodeld in Sources */,
-				D4E837451724DEFE001152D1 /* AutoSyncWithHerokuIncrementalStore.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D4E837311724DEFE001152D1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4E837321724DEFE001152D1 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		D4E837461724DEFE001152D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D4E837471724DEFE001152D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D4E837491724DEFE001152D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoSyncWithHeroku/AutoSyncWithHeroku-Prefix.pch";
-				INFOPLIST_FILE = "AutoSyncWithHeroku/AutoSyncWithHeroku-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		D4E8374A1724DEFE001152D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutoSyncWithHeroku/AutoSyncWithHeroku-Prefix.pch";
-				INFOPLIST_FILE = "AutoSyncWithHeroku/AutoSyncWithHeroku-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		D4E837171724DEFE001152D1 /* Build configuration list for PBXProject "AutoSyncWithHeroku" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4E837461724DEFE001152D1 /* Debug */,
-				D4E837471724DEFE001152D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D4E837481724DEFE001152D1 /* Build configuration list for PBXNativeTarget "AutoSyncWithHeroku" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4E837491724DEFE001152D1 /* Debug */,
-				D4E8374A1724DEFE001152D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D4E837401724DEFE001152D1 /* AutoSyncWithHeroku.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D4E837411724DEFE001152D1 /* AutoSyncWithHeroku.xcdatamodel */,
-			);
-			currentVersion = D4E837411724DEFE001152D1 /* AutoSyncWithHeroku.xcdatamodel */;
-			path = AutoSyncWithHeroku.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = D4E837141724DEFE001152D1 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>57DE97AC370C48BFBC2D5434</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7D21FAD29F7D4F3C89093D6C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>5CDAC529648947C3B53BFD98</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>6321C7904E5E4E02B3F6FD97</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>7D21FAD29F7D4F3C89093D6C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C6E1BBB016A44A4BBC6A0F29</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>D4E837131724DEFE001152D1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D4E837271724DEFE001152D1</string>
+				<string>D4E8371E1724DEFE001152D1</string>
+				<string>D4E8371D1724DEFE001152D1</string>
+				<string>6321C7904E5E4E02B3F6FD97</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837141724DEFE001152D1</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>aswh</string>
+				<key>LastUpgradeCheck</key>
+				<string>0460</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Andrew Roin</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>D4E837171724DEFE001152D1</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>D4E837131724DEFE001152D1</string>
+			<key>productRefGroup</key>
+			<string>D4E8371D1724DEFE001152D1</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>D4E8371B1724DEFE001152D1</string>
+			</array>
+		</dict>
+		<key>D4E837171724DEFE001152D1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D4E837461724DEFE001152D1</string>
+				<string>D4E837471724DEFE001152D1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D4E837181724DEFE001152D1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D4E8372F1724DEFE001152D1</string>
+				<string>D4E837351724DEFE001152D1</string>
+				<string>D4E837381724DEFE001152D1</string>
+				<string>D4E837421724DEFE001152D1</string>
+				<string>D4E837451724DEFE001152D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D4E837191724DEFE001152D1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D4E837201724DEFE001152D1</string>
+				<string>D4E837221724DEFE001152D1</string>
+				<string>D4E837241724DEFE001152D1</string>
+				<string>D4E837261724DEFE001152D1</string>
+				<string>57DE97AC370C48BFBC2D5434</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D4E8371A1724DEFE001152D1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D4E837291724DEFE001152D1</string>
+				<string>D4E837331724DEFE001152D1</string>
+				<string>D4E8373A1724DEFE001152D1</string>
+				<string>D4E8373C1724DEFE001152D1</string>
+				<string>D4E8373E1724DEFE001152D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D4E8371B1724DEFE001152D1</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D4E837481724DEFE001152D1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>5CDAC529648947C3B53BFD98</string>
+				<string>D4E837181724DEFE001152D1</string>
+				<string>D4E837191724DEFE001152D1</string>
+				<string>D4E8371A1724DEFE001152D1</string>
+				<string>C6E1BBB016A44A4BBC6A0F29</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AutoSyncWithHeroku</string>
+			<key>productName</key>
+			<string>AutoSyncWithHeroku</string>
+			<key>productReference</key>
+			<string>D4E8371C1724DEFE001152D1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>D4E8371C1724DEFE001152D1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AutoSyncWithHeroku.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D4E8371D1724DEFE001152D1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D4E8371C1724DEFE001152D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8371E1724DEFE001152D1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D4E8371F1724DEFE001152D1</string>
+				<string>D4E837211724DEFE001152D1</string>
+				<string>D4E837231724DEFE001152D1</string>
+				<string>D4E837251724DEFE001152D1</string>
+				<string>7D21FAD29F7D4F3C89093D6C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8371F1724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>D4E837201724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E8371F1724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837211724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>D4E837221724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837211724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837231724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>D4E837241724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837231724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837251724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>D4E837261724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837251724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837271724DEFE001152D1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D4E837281724DEFE001152D1</string>
+				<string>D4E837361724DEFE001152D1</string>
+				<string>D4E837371724DEFE001152D1</string>
+				<string>D4E8372C1724DEFE001152D1</string>
+				<string>D4E8373F1724DEFE001152D1</string>
+				<string>D4E8372A1724DEFE001152D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AutoSyncWithHeroku</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837281724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837291724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837281724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E8372A1724DEFE001152D1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D4E8372B1724DEFE001152D1</string>
+				<string>D4E837301724DEFE001152D1</string>
+				<string>D4E837311724DEFE001152D1</string>
+				<string>D4E837341724DEFE001152D1</string>
+				<string>D4E837391724DEFE001152D1</string>
+				<string>D4E8373B1724DEFE001152D1</string>
+				<string>D4E8373D1724DEFE001152D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8372B1724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AutoSyncWithHeroku-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8372C1724DEFE001152D1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D4E8372D1724DEFE001152D1</string>
+				<string>D4E8372E1724DEFE001152D1</string>
+				<string>D4E837431724DEFE001152D1</string>
+				<string>D4E837441724DEFE001152D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Networking</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8372D1724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AutoSyncWithHerokuAPIClient.h</string>
+			<key>path</key>
+			<string>Classes/AutoSyncWithHerokuAPIClient.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8372E1724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AutoSyncWithHerokuAPIClient.m</string>
+			<key>path</key>
+			<string>Classes/AutoSyncWithHerokuAPIClient.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8372F1724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E8372E1724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837301724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>AutoSyncWithHeroku-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837311724DEFE001152D1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D4E837321724DEFE001152D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837321724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837331724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837311724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837341724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837351724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837341724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837361724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>aswhAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837371724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>aswhAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837381724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837371724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837391724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8373A1724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837391724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E8373B1724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8373C1724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E8373B1724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E8373D1724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E8373E1724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E8373D1724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E8373F1724DEFE001152D1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D4E837401724DEFE001152D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837401724DEFE001152D1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D4E837411724DEFE001152D1</string>
+			</array>
+			<key>currentVersion</key>
+			<string>D4E837411724DEFE001152D1</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>AutoSyncWithHeroku.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>D4E837411724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>AutoSyncWithHeroku.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837421724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837401724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837431724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AutoSyncWithHerokuIncrementalStore.h</string>
+			<key>path</key>
+			<string>Classes/AutoSyncWithHerokuIncrementalStore.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837441724DEFE001152D1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AutoSyncWithHerokuIncrementalStore.m</string>
+			<key>path</key>
+			<string>Classes/AutoSyncWithHerokuIncrementalStore.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E837451724DEFE001152D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4E837441724DEFE001152D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D4E837461724DEFE001152D1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D4E837471724DEFE001152D1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D4E837481724DEFE001152D1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D4E837491724DEFE001152D1</string>
+				<string>D4E8374A1724DEFE001152D1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D4E837491724DEFE001152D1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6321C7904E5E4E02B3F6FD97</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoSyncWithHeroku/AutoSyncWithHeroku-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoSyncWithHeroku/AutoSyncWithHeroku-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D4E8374A1724DEFE001152D1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6321C7904E5E4E02B3F6FD97</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AutoSyncWithHeroku/AutoSyncWithHeroku-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AutoSyncWithHeroku/AutoSyncWithHeroku-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D4E837141724DEFE001152D1</string>
+</dict>
+</plist>
