@@ -1,7 +1,7 @@
 #import "AutoSyncWithHerokuAPIClient.h"
 #import "AFJSONRequestOperation.h"
 
-static NSString * const kAutoSyncWithHerokuAPIBaseURLString = @"<# API Base URL #>";
+static NSString * const kAutoSyncWithHerokuAPIBaseURLString = @"http://shielded-springs-4794.herokuapp.com";
 
 @implementation AutoSyncWithHerokuAPIClient
 

@@ -7,6 +7,7 @@
 //
 
 #import "aswhAppDelegate.h"
+#import "aswhGamesViewController.h"
 
 #import "AFNetworkActivityIndicatorManager.h"
 
@@ -19,7 +20,18 @@
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:8 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
+
+    aswhGamesViewController *viewController = [[aswhGamesViewController alloc] initWithNibName:@"aswhGamesViewController" bundle:nil];
+    viewController.managedObjectContext = self.managedObjectContext;
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
+    
+    return YES;
+    
+    /*    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:8 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
     [NSURLCache setSharedURLCache:URLCache];
     
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
@@ -31,7 +43,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
-    return YES;
+    return YES;*/
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
