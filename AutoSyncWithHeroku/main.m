@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 {
     @autoreleasepool {
          //nihao
+         //fff
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([aswhAppDelegate class]));
     }
 }
